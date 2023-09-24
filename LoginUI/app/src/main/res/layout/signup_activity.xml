@@ -4,13 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
     tools:context=".LoginActivity">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/back"
-        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textViewTen"
@@ -20,7 +15,6 @@
         android:layout_marginEnd="20dp"
         android:text="Đỗ Lê Thanh Tuấn"
         android:textSize="20dp"
-        android:textColor="#9C27B0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,10 +22,10 @@
         android:id="@+id/textViewMSV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:text="21115053120157"
         android:textSize="20dp"
-        android:textColor="#9C27B0"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTen" />
@@ -50,44 +44,55 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="50dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/custom_label_main"
-            android:text="ĐĂNG NHẬP"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_label"
+            android:text="ĐĂNG KÝ TÀI KHOẢN"
             android:textAlignment="center"
-            android:textColor="#FF9800"
+            android:textColor="#9C27B0"
             android:textSize="35dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginRight="70dp"
-                android:background="@drawable/custom_label"
-                android:hint="Tài khoản"
-                android:textAlignment="center"
-                android:textSize="25dp" />
-
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/custom_label"
+            android:hint="Tài khoản"
+            android:textAlignment="center"
+            android:textSize="30dp" />
 
         <EditText
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
+            android:layout_marginLeft="60dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="70dp"
+            android:layout_marginRight="60dp"
             android:background="@drawable/custom_label"
             android:ems="10"
             android:hint="Mật khẩu"
             android:inputType="textPassword"
             android:textAlignment="center"
-            android:textSize="25dp" />
+            android:textSize="30dp" />
+        <EditText
+            android:id="@+id/editTextTextRepeatPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/custom_label"
+            android:ems="10"
+            android:hint="Xác nhận mật khẩu"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textSize="30dp" />
 
         <Button
             android:layout_width="match_parent"
@@ -96,51 +101,10 @@
             android:layout_marginTop="30dp"
             android:layout_marginRight="120dp"
             android:background="@drawable/custom_button"
-            android:text="Đăng nhập"
+            android:text="Đăng ký"
             android:textColor="#FFEB3B"
             android:textSize="20dp"
             app:backgroundTint="@null" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:layout_marginTop="30dp"
-            android:padding="10dp"
-            android:text="Quên mật khẩu ?"
-            android:textSize="20dp"
-            android:textColor="#FFEB3B"
-            android:textAlignment="center"
-            />
-        <RelativeLayout
-            android:layout_marginTop="60dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/fb"
-                    />
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/instagram"
-                    />
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/twitter"
-                    />
-            </LinearLayout>
-        </RelativeLayout>
-
 
     </LinearLayout>
 
